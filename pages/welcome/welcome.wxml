@@ -1,0 +1,12 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <view class='imageBox'>
+    <image class='userImage' src="{{avatarUrl}}"></image>
+  </view>
+  <view class='nameBox'>
+    <text class='userName'>{{nickName}}</text>
+  </view>
+  <view class='buttonBox'>
+    <button plain='true' open-type='getUserInfo' bindgetuserinfo='onGetUserInfo'>开启小程序</button>
+  </view>
+</view>
