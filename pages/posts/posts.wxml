@@ -2,7 +2,6 @@
 <import src="./posts-tpl/template.wxml" />
 
 <view class="container">
-
   <swiper indicator-dots='true'>
     <block wx:for="{{swiperData}}" wx:key="{{item.id}}">
       <swiper-item>
