@@ -7,6 +7,6 @@
     <text class='userName'>{{nickName}}</text>
   </view>
   <view class='buttonBox'>
-    <button plain='true' open-type='getUserInfo' bindgetuserinfo='onGetUserInfo'>开启小程序</button>
+    <button plain='true'  bindtap='onStart'>开启小程序</button>
   </view>
 </view>
