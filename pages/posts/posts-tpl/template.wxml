@@ -2,14 +2,14 @@
   <view class='post-container'>
     <view class="post-list">
       <view class="post-content">
-        <text class="content-title">{{item.articleTitle}}</text>
+        <text class="content-title">{{item.postTitle}}</text>
         <view class='content-desc'>
-          <text class='desc-date'>{{item.articleDate}}</text>
-          <text class='desc-source'>{{item.articleSource}}</text>
+          <text class='desc-date'>{{item.postDate}}</text>
+          <text class='desc-source'>{{item.postSource}}</text>
         </view>
       </view>
       <view class="post-image">
-        <image src="{{item.articleImage}}"></image>
+        <image src="{{item.postImage}}"></image>
       </view>
     </view>
     <view class='post-line'>

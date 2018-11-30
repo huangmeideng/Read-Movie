@@ -2,16 +2,18 @@
 <import src="./posts-tpl/template.wxml" />
 
 <view class="container">
-  <swiper indicator-dots='true'>
-    <block wx:for="{{swiperData}}" wx:key="{{item.id}}">
+  <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <block wx:for="{{swipersData}}" wx:key="{{item.postId}}">
       <swiper-item>
-        <image src="{{item.imgUrl}}"></image>
+        <image src="{{item.postImage}}" catchtap="onJumpPostDetail" data-postid="{{item.postId}}"></image>
       </swiper-item>
     </block>
   </swiper>
 
-  <block wx:for="{{articleData}}" wx:key="{{item.id}}">
-    <template is="post-list" data="{{item}}"></template>
+  <block wx:for="{{postsData}}" wx:key="{{item.postId}}">
+    <view catchtap="onJumpPostDetail" data-postid="{{item.postId}}">
+      <template is="post-list" data="{{item}}"></template>
+    </view>
   </block>
 
 </view>

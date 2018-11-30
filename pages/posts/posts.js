@@ -10,13 +10,20 @@ Page({
 
   },
 
+  onJumpPostDetail: function (options) {
+    let postId = options.currentTarget.dataset.postid;
+    wx.navigateTo({
+      url: './posts-detail/posts-detail?id=' + postId,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({
-      swiperData: testData.swiperData,
-      articleData: testData.articleData
+      swipersData: testData.swipersData,
+      postsData: testData.postsData
     });
   },
 

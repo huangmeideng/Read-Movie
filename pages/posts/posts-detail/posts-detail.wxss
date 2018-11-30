@@ -1,0 +1,106 @@
+/* pages/posts/posts-detail/posts-detail.wxss */
+
+/*
+* container css
+*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+* post image css
+*/
+.post-image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.post-image image {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+* post head css
+*/
+.post-head {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  align-items: flex-end;
+}
+
+.post-head image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100rpx;
+  margin-left: 40rpx;
+}
+
+.head-text {
+  margin-left: 40rpx;
+}
+
+.head-text text:first-child {
+  font-size: 24rpx;
+  background-color: #FEBF5B;
+  color: #fff;
+  padding: 4rpx 10rpx;
+  border-radius: 50rpx;
+}
+
+.head-text text:last-child {
+  margin-left: 40rpx;
+  font-size: 22rpx;
+}
+
+/*
+* post action css
+*/
+.post-action {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.action-line {
+  height: 1px;
+  background-color: #A9803F;
+  width: 550rpx;
+  margin-left: 10rpx;
+  position: absolute;
+  margin-top: 30rpx;
+  z-index: -99;
+}
+
+.action-image {
+  display: flex;
+  flex-direction: row;
+  margin-left: 570rpx;
+}
+
+.post-action image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+/* .post-action image:last-child {
+  margin-left: 24rpx;
+} */
+
+.post-action button {
+  margin-left: 24rpx;
+  padding: 0;
+  border: none;
+}
+
+/*
+* post title css
+*/
+
+.post-title {
+  font-size: 28rpx;
+  margin-left: 18rpx;
+  margin-top: -38rpx;
+}
