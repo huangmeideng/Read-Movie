@@ -2,12 +2,43 @@
   "pages": [
     "pages/welcome/welcome",
     "pages/posts/posts",
-    "pages/posts/posts-detail/posts-detail"
+    "pages/posts/posts-detail/posts-detail",
+    "pages/movies/movies",
+    "pages/books/books",
+    "pages/users/users"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#6FBDC2",
     "navigationBarTitleText": "Read&Movie",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "posts",
+        "iconPath": "/static/icon/tabicon/new.png",
+        "selectedIconPath": "/static/icon/tabicon/new_on.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "movies",
+        "iconPath": "/static/icon/tabicon/movie.png",
+        "selectedIconPath": "/static/icon/tabicon/movie_on.png"
+      },
+      {
+        "pagePath": "pages/books/books",
+        "text": "books",
+        "iconPath": "/static/icon/tabicon/book.png",
+        "selectedIconPath": "/static/icon/tabicon/book_on.png"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "text": "users",
+        "iconPath": "/static/icon/tabicon/user.png",
+        "selectedIconPath": "/static/icon/tabicon/user_on.png"
+      }
+    ]
   }
 }
